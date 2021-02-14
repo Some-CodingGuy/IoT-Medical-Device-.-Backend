@@ -9,7 +9,7 @@ As a starting point this needs to enable users to:
     * Depending on the type of user that logs in, the user gets a certain view 
   * Design a view for each type of user
   
-  \
+  <br\>
   
   * There are basically 3 types of users:
     * Patiens, medical staff and admin
