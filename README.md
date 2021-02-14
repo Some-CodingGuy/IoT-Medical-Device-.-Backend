@@ -1,6 +1,6 @@
-# IoT-Medical-Device-.-WebsiteBackend
+# IoT-Medical-Device-.-WebAppBackend
 
-In this repository we'll be working on the mobile app of the project. 
+In this repository we'll be working on the backend of the web application of the project. 
 I'll start making a list of requirements, of what needs to be done, what the backend has to be able to do. Feel free to add new items to the list as you see fitting.
 
 As a starting point this needs to enable users to:
