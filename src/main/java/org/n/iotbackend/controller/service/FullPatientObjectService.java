@@ -11,8 +11,13 @@ import java.util.UUID;
 @Service
 public class FullPatientObjectService {
 
+    private FullPatientObjectRepository fullPatientObjectRepository;
+
     @Autowired
-    FullPatientObjectRepository fullPatientObjectRepository;
+    public FullPatientObjectService(FullPatientObjectRepository fullPatientObjectRepository){
+        this.fullPatientObjectRepository = fullPatientObjectRepository;
+    }
+
 
     public List<FullPatientObject> getAllPatiensWithFullDetails(){
         return fullPatientObjectRepository.findAll();
@@ -22,13 +27,8 @@ public class FullPatientObjectService {
         return fullPatientObjectRepository.getOne(uuid);
     }
 
-    public boolean savePatientToDatabase(FullPatientObject fullPatientObject){
-
-        if(fullPatientObject != null) {
-            fullPatientObjectRepository.save(fullPatientObject);
-            return true;
-        }
-        else return false;
+    public void savePatientToDatabase(FullPatientObject fullPatientObject){
+        fullPatientObjectRepository.save(fullPatientObject);
     }
 
 
